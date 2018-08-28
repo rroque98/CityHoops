@@ -1,0 +1,55 @@
+
+body {
+  background-color: white;
+  padding: 2rem;
+}
+
+.header-jumbo {
+  background-color: grey;
+  font-weight: bolder;
+}
+
+.game {
+  border-bottom: 1px solid #d7dbe2;
+  background-color: #e1e7f2;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #d7dbe2;
+}
+
+.google-map-wrapper {
+  width: 400px;
+  height: 500px;
+}
+
+.padding-below {
+  padding: 1rem;
+}
+
+.teal {
+  background-color: #20b7d6;
+  color: white;
+  border-radius: 25px;
+}
+
+.user-image {
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+}
+
+.images-container {
+  display: inline;
+}
+
+.half-container {
+  width: 50%;
+}
+
+.full-container {
+  display: flex;
+  flex-direction: wrap;
+}
