@@ -17,28 +17,38 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  <!-- > Name the product in a way the reader (i.e. your target customers) will understand. -->
+  Ballers
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  <!-- > Describe who the market for the product is and what benefit they get. One sentence only underneath the title. -->
+  An app for any basketball fans looking for a local pickup game and to meet new people.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  <!-- > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good. -->
+  Do you ever feel like it is difficult to find other people to play basketball with? Even if you know many people, have you had difficulty coordinating a game? Ballers aims to solve this issue by providing you with a way to easily sign up for local pick-up games using google maps and a user-friendly interface.
+
 
 ## Problem ##
-  > Describe the problem your product solves.
+  <!-- > Describe the problem your product solves. -->
+  It is difficult to find people to play basketball with.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  <!-- > Describe how your product elegantly solves the problem. -->
+  This app will help make it easier to form a pickup game while also allowing one to meet new people.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  <!-- > A quote from a spokesperson in your company. -->
+  "Ballers is an app for the basketball community."
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  <!-- > Describe how easy it is to get started. -->
+  Just click on any available pick up games and sign up.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  <!-- > Provide a quote from a hypothetical customer that describes how they experienced the benefit. -->
+  "I love the community of ballers and how easy the app is to use!"
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  <!-- > Wrap it up and give pointers where the reader should go next. -->
+  Start by logging in and joining a pick up game.
