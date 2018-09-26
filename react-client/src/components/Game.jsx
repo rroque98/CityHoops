@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Game = ({ game, users }) => (
+const Game = ({ game, users, handleClickJoin }) => (
   <div>
     <div key={game.id} className='game padding-below shadow-lg full-container'>
       <div className='half-container'>
@@ -19,7 +19,7 @@ const Game = ({ game, users }) => (
         <div>
           End time:{game.end_time}
         </div>
-        <button className='shadow-lg teal' onClick={(e) => this.props.handleClickJoin(e, game.id)}>Join pick-up game {game.id}!</button>
+        <button className='shadow-lg teal' onClick={(e) => handleClickJoin(e, game.id)}>Join pick-up game {game.id}!</button>
       </div>
       {users.filter((player) => player.basketballgames_id === game.id)
         .map(playerForGame => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
 import axios from 'axios';
 import GamesList from './components/GamesList.jsx';
 import GoogleMap from './components/GoogleMap.jsx';
@@ -45,12 +44,13 @@ class App extends React.Component {
 
   handleClickJoin(e, id) {
     let data = { user_id: 21, basketballgame_id: id};
-    $.ajax({
-      type: "POST",
-      url: '/joinGame',
-      data: data,
-      success: ''
-    });
+    axios.post('/joinGame', data)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 
     axios.get('/users')
       .then((users) => {
@@ -67,7 +67,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <h1><i className="fas fa-basketball-ball"></i> <strong>Ballers</strong></h1>
+        <h1><i className="fas fa-basketball-ball"></i> <strong>LocalBall</strong></h1>
         <h6 className="">  An app for anyone looking to play basketball and meet new people.</h6>
 
         <div className='google-map-wrapper'>

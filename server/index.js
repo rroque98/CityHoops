@@ -3,8 +3,7 @@ const bodyParser = require('body-parser');
 const db = require('../database-mysql');
 
 const app = express();
-app.use(bodyParser.urlencoded({ extended: true }))
-bodyParser.json();
+app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../react-client/dist'));
 
 app.get('/users', function (req, res) {
