@@ -5,3 +5,6 @@ GOOGLE_MAPS_API.json
 GMA.json
 
 .env
+
+.prettierrc
+.eslintrc.json
