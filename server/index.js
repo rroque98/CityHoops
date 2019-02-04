@@ -1,14 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 const db = require('../database-mysql');
 
 const app = express();
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/../react-client/dist'));
+// app.use(express.static(__dirname + '/../react-client/dist'));
+app.use(express.static(path.join(__dirname, '/../react-client/dist')));
 
-app.get('/users', function (req, res) {
-  db.selectAllUsers(function(err, data) {
-    if(err) {
+app.get('/users', (req, res) => {
+  db.selectAllUsers((err, data) => {
+    if (err) {
       res.sendStatus(500);
     } else {
       res.json(data);
@@ -16,9 +18,9 @@ app.get('/users', function (req, res) {
   });
 });
 
-app.get('/games', function (req, res) {
-  db.selectAllGames(function(err, data) {
-    if(err) {
+app.get('/games', (req, res) => {
+  db.selectAllGames((err, data) => {
+    if (err) {
       res.sendStatus(500);
     } else {
       res.json(data);
@@ -26,9 +28,9 @@ app.get('/games', function (req, res) {
   });
 });
 
-app.get('/specificGame', function (req, res) {
-  db.selectSpecificGame(req.body.gameId, function(err, data) {
-    if(err) {
+app.get('/specificGame', (req, res) => {
+  db.selectSpecificGame(req.body.gameId, (err, data) => {
+    if (err) {
       res.sendStatus(500);
     } else {
       res.json(data);
@@ -36,9 +38,9 @@ app.get('/specificGame', function (req, res) {
   });
 });
 
-app.post('/joinGame', function (req, res) {
-  db.joinGame(req.body, function(err, data) {
-    if(err) {
+app.post('/joinGame', (req, res) => {
+  db.joinGame(req.body, (err, data) => {
+    if (err) {
       res.sendStatus(500);
     } else {
       res.json(data);
@@ -46,7 +48,6 @@ app.post('/joinGame', function (req, res) {
   });
 });
 
-app.listen(3000, function() {
+app.listen(3000, () => {
   console.log('listening on port 3000!');
 });
-
