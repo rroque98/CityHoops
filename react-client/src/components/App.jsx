@@ -68,22 +68,26 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>
+      <div className="wrapper">
+        <nav>something</nav>
+        <header>
           <i className="fas fa-basketball-ball" /> <strong>CityHoops</strong>
-        </h1>
-        <h6 className=""> An app for anyone looking to play basketball and meet new people.</h6>
-
-        <div className="google-map-wrapper">
+          <h6 className="">
+            {' '}
+            A web app for anyone looking to play basketball and meet new people.
+          </h6>
+        </header>
+        <section className="google-map-wrapper">
           <GoogleMap />
-        </div>
-        <div>
+        </section>
+        <section>
           <GamesList
             games={this.state.games}
             handleClickJoin={this.handleClickJoin}
             users={this.state.users}
           />
-        </div>
+        </section>
+        <footer>SOME FOOTER</footer>
       </div>
     );
   }
